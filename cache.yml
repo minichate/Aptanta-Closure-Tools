@@ -1,39 +1,6 @@
 !!com.aptana.scripting.model.BundleElement
-author: Christopher Troup
+author: null
 children:
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Closure Linter
-  input: [document]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': ['COMMAND+SHIFT+,']
-  outputPath: null
-  outputType: show_as_tooltip
-  path: commands/linter.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.MenuElement
-  children:
-  - children: &id001 []
-    commandName: Closure Linter
-    customProperties: null
-    displayName: Closure Linter
-    path: bundle.rb
-    scope: null
-  - children: *id001
-    commandName: Closure Fixer
-    customProperties: null
-    displayName: Closure Fixer
-    path: bundle.rb
-    scope: null
-  commandName: Closure Tools
-  customProperties: null
-  displayName: Closure Tools
-  path: bundle.rb
-  scope: null
 - !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
@@ -48,18 +15,46 @@ children:
   runType: current_thread
   scope: null
   workingDirectoryType: UNDEFINED
-copyright: (C) Copyright 2010 SheepDogInc.ca
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Closure Linter
+  input: [document]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': ['COMMAND+SHIFT+,']
+  outputPath: null
+  outputType: show_as_tooltip
+  path: commands/linter.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Closure Linter (Pretty)
+  input: [document]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': ['OPTION+COMMAND+SHIFT+,']
+  outputPath: null
+  outputType: show_as_html
+  path: commands/prettylinter.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+copyright: null
 customProperties: null
-decreaseIndentMarkers: &id002 {}
-description: Use Closure tools like linter and style fixer
+decreaseIndentMarkers: {}
+description: null
 displayName: Closure Tools
-fileTypeRegistry: *id002
-fileTypes: *id001
-foldingStartMarkers: *id002
-foldingStopMarkers: *id002
-increaseIndentMarkers: *id002
+fileTypeRegistry: {}
+fileTypes: []
+foldingStartMarkers: {}
+foldingStopMarkers: {}
+increaseIndentMarkers: {}
 license: null
 licenseUrl: null
 path: bundle.rb
-repository: git://github.com/aptana/foo.git
+repository: git://github.com/minichate/Aptana-Closure-Tools.git
 visible: true
